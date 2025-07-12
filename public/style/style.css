@@ -1,0 +1,135 @@
+footer{
+    color: #D7D7D7;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+body{
+    background-color: #273F4F;
+}
+
+.postContainer{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.Topic, .Description{
+    display: block;
+    margin: 25px;
+    font-size: 200%;
+}
+
+.submit{
+    display: block;
+    margin: 25px;   
+    border-radius: 25px;
+    font-size: 20px;
+    height: 50px;
+    width: 800px;
+}
+
+
+.Topic{
+    height: 100px;
+    width: 800px;
+}
+
+.Description{
+    height: 200px;
+    width: 800px;
+}
+
+.Topic, .Description{
+    border-radius: 50px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    margin: 50px;
+}
+
+ul{
+    font-size: 20px;
+    margin: 20px;
+}
+
+li{
+    color: gray;
+    /* margin-bottom: 20px; */
+}
+
+a{
+    color: gray; 
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+.container,.addedContainer{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;  
+}
+
+.content{
+    color: #FE7743;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.addedButton{
+    display: block; 
+    height: 100px;
+    width: 400px;
+    border-radius: 35px;
+    background-color:darkgrey;
+    font-size: 50px;
+}
+
+.addedContainer{
+    text-align: center;
+}
+
+button>a{
+    color:ivory;
+}
+
+.addedContainer>div{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: 1;
+    text-align: center;
+}
+
+.deleteList{
+    list-style-type: none;
+}
+
+.deleteSubmit, .editSelect{
+    display: block; 
+    height: 50px;
+    width: 200px;
+    border-radius: 35px;
+    background-color:darkgrey;
+    font-size: 20px;
+    color:ivory;
+}
+
+.updateLabel{
+    color:ivory;
+    font-size: 25px;
+}
+
+textarea{
+    overflow: hidden; 
+}
