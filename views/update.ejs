@@ -1,0 +1,34 @@
+<%- include("partials/header.ejs") %>
+<% if(locals.Topics){ %> 
+<% if(Topics.length){ %> 
+    <form action="/edit" method="POST">
+        <ul>
+            <% for (let i = 0; i < Topics.length; i++) { %>
+            <li class="deleteList">
+                <input type="radio" name="index" value="<%= i %>">
+             <%= Topics[i] %>
+            </li>
+            <% } %>
+        </ul>
+        <button type="submit" class="editSelect">Edit Selected</button>
+    </form>
+<% }else{ %>
+    <h1>No Posts to Update, Write some. . .</h1>
+<% } %>
+<% }else{ %>
+<div class="postContainer">
+<form action="/update" method="POST">
+  <input type="hidden" name="index" value="<%= index %>">
+  
+  <label class="updateLabel">Topic:</label>
+  <textarea class="Topic" type="text" name="Topic" ><%= topic %></textarea>
+
+  <label class="updateLabel">Description:</label>
+  <textarea class="Description" name="Description"><%= description %></textarea>
+
+  <button class="submit" type="submit" >Update</button>
+</form>
+</div>
+
+<% } %>
+<%- include("partials/footer.ejs") %>

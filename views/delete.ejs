@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+<% if(Topics.length){ %> 
+    <ul>
+        <form action="/delete" method="POST">
+   <% for(let i = 0; i < Topics.length; i++){ %> 
+        <li class="deleteList">
+             <input type="checkbox" name="deleteIndexes" value="<%= i %>">
+                <%= Topics[i] %>
+        </li>
+    <% } %>
+    </ul>
+    <button type="submit" class="deleteSubmit">Delete Selected</button>
+    </form>
+<% }else{ %>
+    <h1>No Posts to Delete, Write some. . .</h1>
+<% } %>
+<%- include("partials/footer.ejs") %>

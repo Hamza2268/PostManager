@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %> 
+<% if(locals.Topics){ %>
+<% if(Topics.length){ %> 
+    <ul>
+   <% for(let i = 0; i < Topics.length; i++){ %> 
+        <li>
+            <a href="/essay?index=<%= i %>" class="list"><%= Topics[i] %></a> 
+        </li>
+    <% } %>
+    </ul>
+<% }else{ %>
+    <h1>No Posts to view, Write some. . .</h1>
+<% } %>
+<% }else{ %>
+    <div class="container"><div class="content"> <%= desc %> </div></div>
+    
+<% } %>
+
+<%- include("partials/footer.ejs") %>
