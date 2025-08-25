@@ -46,27 +46,6 @@ npm install
 ```bash
 node index.js
 ```
-
-PostManager/
-│
-├─ public/              # Static assets (CSS, JS)
-├─ views/               # EJS templates
-│   ├─ partials/        # Header and footer templates
-│   ├─ index.ejs        # Home page / list of posts
-│   ├─ posts.ejs        # Add post page
-│   ├─ added.ejs        # Confirmation page after adding a post
-│   ├─ delete.ejs       # Delete post page
-│   ├─ update.ejs       # Update post page
-│
-├─ app.js               # Main Express server file
-├─ package.json         # Project metadata and dependencies
-└─ README.md            # Project documentation
-
-
-You can **copy this entire block at once** and save it as `README.md` in your project.  
-
-If you want, I can also make a **fancier GitHub-ready version with badges and screenshots** in a single block too. Do you want me to do that?
-
 5. Open your browser and :
 
 ```bash
