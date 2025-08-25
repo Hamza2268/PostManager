@@ -30,3 +30,8 @@
 
 ```bash
 git clone https://github.com/your-username/PostManager.git
+cd PostManager
+npm install
+npm start
+http://localhost:3000
+
