@@ -49,7 +49,6 @@ node index.js
 5. Open your browser and :
 
 ```bash
-[git clone https://github.com/your-username/PostManager.git
-](http://localhost:3000)
+http://localhost:3000
 ```
 
