@@ -30,8 +30,26 @@
 
 ```bash
 git clone https://github.com/your-username/PostManager.git
+```
+2. Navigate into the project directory:
+
+```bash
 cd PostManager
+```
+3. Install dependencies:
+
+```bash
 npm install
-npm start
-http://localhost:3000
+```
+4. Start the server
+
+```bash
+node index.js
+```
+5. Open your browser and :
+
+```bash
+[git clone https://github.com/your-username/PostManager.git
+](http://localhost:3000)
+```
 
